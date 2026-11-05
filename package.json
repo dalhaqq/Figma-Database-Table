@@ -1,10 +1,15 @@
 {
-  "name": "database-table",
+  "name": "erd-table-mcp",
   "version": "0.1.0",
-  "description": "Database tables for FigJam",
+  "description": "Database tables for FigJam with a Figma Console MCP bridge (fork of Database Table by PillFall)",
   "main": "dist/code.js",
   "scripts": {
-    "build": "tsc -p tsconfig.json && rollup -c",
+    "build": "npm run build-widget && npm run build-ui",
+    "build-widget": "tsc -p tsconfig.json && rollup -c",
+    "build-ui": "npm run build-ui-edit && npm run build-ui-raw && npm run build-ui-index",
+    "build-ui-edit": "parcel build ui-src/edit --no-autoinstall --dist-dir dist",
+    "build-ui-raw": "parcel build ui-src/raw --no-autoinstall --dist-dir dist",
+    "build-ui-index": "parcel build ui-src/index --no-autoinstall --dist-dir dist",
     "watch-tsc": "tsc -p tsconfig.json --watch",
     "watch-js": "rollup -c --watch",
     "watch-ui-edit": "parcel watch ui-src/edit --no-autoinstall --dist-dir dist",

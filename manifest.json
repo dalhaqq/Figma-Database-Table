@@ -1,13 +1,21 @@
 {
-  "name": "Database Table",
-  "id": "1102833776087940938",
+  "name": "Figma Database Table with MCP",
+  "id": "1700078262089661300",
   "api": "1.0.0",
   "main": "dist/code.js",
+  "capabilities": [],
+  "enableProposedApi": false,
+  "documentAccess": "dynamic-page",
   "editorType": [
     "figjam"
   ],
   "containsWidget": true,
   "widgetApi": "1.0.0",
+  "networkAccess": {
+    "allowedDomains": [
+      "none"
+    ]
+  },
   "ui": {
     "edit": "dist/edit.html",
     "rawEdit": "dist/raw.html",

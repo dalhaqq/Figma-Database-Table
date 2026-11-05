@@ -58,14 +58,14 @@
     strip-json-comments "^3.1.1"
 
 "@figma/plugin-typings@*":
-  version "1.45.0"
-  resolved "https://registry.yarnpkg.com/@figma/plugin-typings/-/plugin-typings-1.45.0.tgz#9a0b73151c749a2023e40943e0ba368559437703"
-  integrity sha512-qMvWW/HDcVVlroUtazml42AyXvjYrtE9zat4tCoAHzI2YZNCXm2VhXoE0nKp5dn7OrPb+LvvBZx+oALY34dZiw==
+  version "1.142.0"
+  resolved "https://registry.yarnpkg.com/@figma/plugin-typings/-/plugin-typings-1.142.0.tgz#985177066e9aeb4e64e9c3632d552ea7630c023a"
+  integrity sha512-Loa9P4bUZi/pQejic8OYQSU4Zz9izJdIiDUkkKddq5Bfc5JPRV6pCeg3C8owovbX9lKshaFym86PlMhKZgLeBw==
 
 "@figma/widget-typings@*":
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/@figma/widget-typings/-/widget-typings-1.2.3.tgz#c056bc9a2223fc2a6ea7d05bbdb9b13439f3dc9d"
-  integrity sha512-80VqTYLQBM0kXpDGumGSk9Ir7gOzMrZVOeYmK9i8CeJRlQQhlgtojLnNyMeqnxOWufwXybjt2HhqvHR2yjjqLw==
+  version "1.13.0"
+  resolved "https://registry.yarnpkg.com/@figma/widget-typings/-/widget-typings-1.13.0.tgz#4192a34ee96522186699a0f7e3d0c9b6edc2adcb"
+  integrity sha512-Ag1fNYk2+Kwv48uV90QQycY+CHI7jLMokk0JdII1PyM5JYOZPhGKG0yiit3bnZUFdaTv9ZnFIa8/gPFS/7Ia8Q==
 
 "@humanwhocodes/config-array@^0.11.6":
   version "0.11.7"
