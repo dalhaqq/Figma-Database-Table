@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto+Mono:wght@400;500&display=block");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css");
+* { box-sizing: border-box; margin: 0; padding: 0; }
+.tbl { background: #fff; border: 1.5px solid #e6e6e6; border-radius: 24px; overflow: hidden; flex: none; }
+.tbl .hd { height: 72px; display: flex; align-items: center; justify-content: center; font: 700 36px Inter, sans-serif; }
+.tbl .row { height: 72px; display: flex; align-items: center; padding-right: 24px; font: 400 27px "Roboto Mono", monospace; color: #000; }
+.tbl .row .ic { width: 48px; text-align: center; font-size: 27px; }
+.tbl .row .nm { flex: 1; }
+.ix { padding: 18px; }
+.ix .box { background: #e6e6e6; border-radius: 12px; padding: 18px; display: flex; flex-direction: column; gap: 6px; }
+.ix .ttl { font: 600 30px Inter, sans-serif; height: 48px; display: flex; align-items: center; }
+.ix .it { background: #fff; border-radius: 12px; height: 66px; display: flex; align-items: center; padding-right: 24px; font: 400 27px "Roboto Mono", monospace; }
+.ix .it .ic { width: 48px; text-align: center; font-size: 27px; }
+.k { color: #FFCD29 } .f { color: #9747FF } .u { color: #0D99FF } .i { color: #48C774 }

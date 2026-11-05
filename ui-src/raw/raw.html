@@ -10,12 +10,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
     rel="stylesheet">
 
-  <link href="https://unpkg.com/monaco-editor/min/vs/editor/editor.main.css" rel="stylesheet">
+  <link href="https://unpkg.com/monaco-editor@0.57.0/min/vs/editor/editor.main.css" rel="stylesheet">
   <link rel="stylesheet" href="data-url:./scss/style.scss">
 
-  <script src="https://unpkg.com/monaco-editor/min/vs/loader.js"></script>
+  <script src="https://unpkg.com/monaco-editor@0.57.0/min/vs/loader.js"></script>
   <script>
-    window.require.config({ paths: { "vs": "https://unpkg.com/monaco-editor/min/vs" } })
+    window.require.config({ paths: { "vs": "https://unpkg.com/monaco-editor@0.57.0/min/vs" } })
     window.require(["vs/editor/editor.main"], () => {
       this.editor = window.monaco.editor.create(document.getElementById("editor"), {
         language: "json",

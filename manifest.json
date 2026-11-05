@@ -1,5 +1,5 @@
 {
-  "name": "Figma Database Table with MCP",
+  "name": "Database Table + AI Bridge",
   "id": "1700078262089661300",
   "api": "1.0.0",
   "main": "dist/code.js",
@@ -13,7 +13,9 @@
   "widgetApi": "1.0.0",
   "networkAccess": {
     "allowedDomains": [
-      "none"
+      "https://fonts.googleapis.com",
+      "https://fonts.gstatic.com",
+      "https://unpkg.com"
     ]
   },
   "ui": {

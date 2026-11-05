@@ -1,6 +1,6 @@
 # Integrasi Figma Console MCP
 
-Widget **Figma Database Table with MCP** membuka jembatan data lewat `sharedPluginData` di node
+Widget **Database Table + AI Bridge** membuka jembatan data lewat `sharedPluginData` di node
 widget. Plugin lain, termasuk Figma Console MCP (`figma_execute`), dapat membaca
 tabel dan mengirim perubahan tanpa perlu ID widget.
 
@@ -233,7 +233,7 @@ pilih widget itu, lalu:
 
 ```js
 const node = figma.currentPage.selection.find((n) => n.type === "WIDGET")
-if (!node) return "Pilih satu widget Figma Database Table with MCP terlebih dahulu"
+if (!node) return "Pilih satu widget Database Table + AI Bridge terlebih dahulu"
 
 node.setSharedPluginData("erd", "inbox", JSON.stringify({
   version: 1,
