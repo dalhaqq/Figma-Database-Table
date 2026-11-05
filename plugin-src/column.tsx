@@ -10,6 +10,11 @@ import {
   getKeyDecorator,
 } from "./key"
 
+export interface ColumnReference {
+  table: string
+  column: string
+}
+
 export interface Column {
   name: string
   type: string
@@ -17,6 +22,8 @@ export interface Column {
   keyType:
   | KeyType
   | "normal"
+  // Optional relation target, used mainly by foreign key columns.
+  references?: ColumnReference
 }
 
 export function KeyColumn(props) {
