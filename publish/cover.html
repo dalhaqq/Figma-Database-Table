@@ -1,0 +1,49 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="widget.css"><style>
+body { width: 1920px; height: 960px; overflow: hidden; background: #F5F3EE; font-family: Inter, sans-serif; position: relative; }
+body::before { content: ""; position: absolute; inset: 0; background-image: radial-gradient(#d6d2c8 1.6px, transparent 1.6px); background-size: 32px 32px; }
+.copy { position: absolute; left: 112px; top: 112px; width: 640px; }
+.eyebrow { font: 600 22px Inter; letter-spacing: .12em; text-transform: uppercase; color: #14AE5C; margin-bottom: 28px; }
+h1 { font: 800 84px/1.02 Inter; color: #1E1E1E; letter-spacing: -0.02em; }
+h1 span { color: #9747FF; }
+p.lead { font: 400 30px/1.45 Inter; color: #4a4a4a; margin-top: 32px; }
+.chips { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 44px; }
+.chip { font: 500 22px "Roboto Mono"; background: #1E1E1E; color: #fff; border-radius: 999px; padding: 12px 22px; }
+.chip.alt { background: #fff; color: #1E1E1E; border: 1.5px solid #1E1E1E; }
+.stage { position: absolute; left: 790px; top: 0; width: 1100px; height: 960px; }
+.t1 { position: absolute; left: 60px; top: 150px; width: 480px; transform: rotate(-2deg); box-shadow: 0 24px 60px rgba(0,0,0,.12); }
+.t2 { position: absolute; left: 570px; top: 110px; width: 480px; transform: rotate(1.5deg); box-shadow: 0 24px 60px rgba(0,0,0,.12); }
+.t3 { position: absolute; left: 470px; top: 560px; width: 480px; transform: rotate(-1deg); box-shadow: 0 24px 60px rgba(0,0,0,.14); }
+.json { position: absolute; left: 30px; top: 640px; width: 400px; background: #1E1E1E; color: #e6e6e6; border-radius: 20px; padding: 26px 30px; font: 400 21px/1.5 "Roboto Mono"; box-shadow: 0 24px 60px rgba(0,0,0,.2); transform: rotate(1deg); }
+.json .tag { font: 600 18px Inter; color: #FFCD29; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 10px; display: flex; gap: 10px; align-items: center; }
+.json b { color: #AFF4C6; font-weight: 400; } .json s { color: #BDE3FF; text-decoration: none; }
+</style></head><body>
+<div class="copy">
+  <div class="eyebrow">FigJam widget</div>
+  <h1>Database Table <span>+ AI Bridge</span></h1>
+  <p class="lead">Design ERD tables in FigJam that AI agents can read and update through Figma Console MCP.</p>
+  <div class="chips"><div class="chip">erd/state</div><div class="chip">erd/inbox</div><div class="chip alt">PK · FK · indexes</div></div>
+</div>
+<div class="stage">
+  <div class="tbl t1">
+    <div class="hd" style="background:#14AE5C;color:#fff">users</div>
+    <div class="row"><span class="ic k"><i class="fa-solid fa-key"></i></span><span class="nm">id</span>bigint</div>
+    <div class="row"><span class="ic u"><i class="fa-solid fa-snowflake"></i></span><span class="nm">email</span>varchar(255)</div>
+    <div class="row"><span class="ic"></span><span class="nm">name</span>varchar(100)?</div>
+    <div class="ix"><div class="box"><div class="ttl">Indexes</div><div class="it"><span class="ic u"><i class="fa-solid fa-snowflake"></i></span>email</div></div></div>
+  </div>
+  <div class="tbl t2">
+    <div class="hd" style="background:#0D99FF;color:#fff">orders</div>
+    <div class="row"><span class="ic k"><i class="fa-solid fa-key"></i></span><span class="nm">id</span>bigint</div>
+    <div class="row"><span class="ic f"><i class="fa-solid fa-link"></i></span><span class="nm">user_id</span>bigint</div>
+    <div class="row"><span class="ic"></span><span class="nm">total</span>numeric(12,2)</div>
+    <div class="ix"><div class="box"><div class="ttl">Indexes</div><div class="it"><span class="ic i"><i class="fa-solid fa-thumbtack"></i></span>user_id</div></div></div>
+  </div>
+  <div class="tbl t3">
+    <div class="hd" style="background:#9747FF;color:#fff">order_items</div>
+    <div class="row"><span class="ic f"><i class="fa-solid fa-link"></i></span><span class="nm">order_id</span>bigint</div>
+    <div class="row"><span class="ic"></span><span class="nm">sku</span>varchar(64)</div>
+    <div class="row"><span class="ic"></span><span class="nm">qty</span>int</div>
+  </div>
+  <div class="json"><div class="tag"><i class="fa-solid fa-wand-magic-sparkles"></i> erd / inbox</div>{ <s>"version"</s>: 1,<br>&nbsp;&nbsp;<s>"tables"</s>: [{<br>&nbsp;&nbsp;&nbsp;&nbsp;<s>"tableName"</s>: <b>"orders"</b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<s>"columns"</s>: [ … ]<br>&nbsp;&nbsp;}] }</div>
+</div>
+</body></html>
